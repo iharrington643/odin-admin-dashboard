@@ -71,9 +71,12 @@ body {
 }
 
 .front-page {
+    display: grid;
     background-color: #DAE0E8;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .bell, .magnify {
@@ -174,4 +177,9 @@ button {
     font-weight: 600;
     background-color: #1992D4;
     border: 0px solid black;
+}
+
+.project-icons img {
+    height: 20px;
+    width: 20px;
 }
