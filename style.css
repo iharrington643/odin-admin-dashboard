@@ -13,7 +13,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: minmax(200px, 1fr) 5fr;
-    grid-template-rows: 130px auto;
+    grid-template-rows: 150px auto;
 }
 
 .sidebar {
@@ -98,6 +98,11 @@ body {
     width: 40px;
 }
 
+.large-profile {
+    height: 60px;
+    width: 60px;
+}
+
 .notif-bar div {
     font-size: 15px;
     font-weight: 500;
@@ -122,4 +127,14 @@ body {
     gap: 20px;
     align-items: center;
     justify-content: right;
+}
+
+.msg {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.user-info {
+    font-size: 18px;
+    font-weight: 500;
 }
