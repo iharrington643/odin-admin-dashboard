@@ -65,8 +65,10 @@ body {
 }
 
 .nav-bar {
+    padding: 15px 60px 15px 40px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    box-shadow: 5px 10px 5px;
 }
 
 .front-page {
@@ -75,7 +77,49 @@ body {
     grid-row: 2 / 3;
 }
 
-.search-bar img {
+.bell, .magnify {
     height: 20px;
     width: 20px;
+}
+
+.search {
+    min-width: 150px;
+    height: 25px;
+    background-color:  #DAE0E8;
+    border-radius: 15px;
+    border-color: transparent;
+    font-family: Roboto;
+    outline: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.small-profile { 
+    height: 40px;
+    width: 40px;
+}
+
+.notif-bar div {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-info {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 60px;
+}
+
+.search-bar {
+    display: grid; 
+    grid-template-columns: 20px auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.notif-bar {
+    display: grid;
+    grid-template-columns: 20px 40px auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: right;
 }
