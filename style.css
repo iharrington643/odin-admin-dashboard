@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
+.sidebar {
+    color: white;
+    background-color: #1992D4;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 40px;
+}
+
+.admin-functions img, .admin-support img {
+    height: 20px;
+    width: 20px;
+}
+
+.dashboard-label img {
+    height: 40px;
+    width: 40px;
+}
+
+.dashboard-label {
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-functions, .admin-support {
+    display: grid;
+    grid-template-columns: 20px auto;
+    align-items: center;
+    gap: 10px;
+}
