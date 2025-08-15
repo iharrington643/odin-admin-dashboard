@@ -76,7 +76,10 @@ body {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 10px 20px 40px 20px;
+    row-gap: 10px;
+    column-gap: 30px;
 }
 
 .bell, .magnify {
@@ -197,4 +200,96 @@ button {
 .trending-board {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.announcement-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px 20px 40px;
+    min-width: 250px;
+}
+
+h4 {
+    font-size: 17px;
+}
+
+hr {
+    border: 0.5px solid lightgray;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.card-info {
+    color: gray;
+}
+
+.announcement-card .card-header {
+    font-size: 14px;
+}
+
+.announcement-card .card-info {
+    font-size: 13px;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px 20px 40px;
+    min-width: 250px;
+}
+
+.trending-card p {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.tegan-info, .isabella-info, .kendall-info, .alex-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-one, .project-two, .project-three, .project-four, .project-five, .project-six {
+    display: grid;
+    grid-template-rows: auto auto;
+    border-left: 7px solid #F0B429;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px 20px 40px;
+    min-width: 150px;
+    min-height: 202px;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-cards .card-header {
+    font-size: 16px;
+}
+
+.project-cards .card-info {
+    font-size: 15px;
+}
+
+.project-icons {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    gap: 20px;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.project-info {
+    grid-row: 1 / 2;
 }
